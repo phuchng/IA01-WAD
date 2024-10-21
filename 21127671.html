@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dealers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .brand-logo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: black;
+        }
+        .navbar-nav .nav-link {
+            color: black;
+        }
+        .navbar-nav .nav-link:hover {
+            color: green;
+        }
+        .navbar-nav .separator {
+            padding: 0 0.5rem;
+            color: black;
+        }
+        .btn-subscribe {
+            background-color: green;
+            color: white;
+        }
+        .deal-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .placeholder-image {
+            background-color: #ff6347;
+            width: 100%;
+            height: 200px;
+        }
+        .deal-end-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: gray;
+        }
+        .deal-countdown-timer {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: black;
+        }
+        .discount-text {
+            font-weight: bold;
+            color: gray;
+        }
+        .discount-percentage {
+            font-size: 3rem;
+            font-weight: bold;
+            color: black;
+        }
+        .price-details p {
+            margin-bottom: 0;
+        }
+        .btn-buy {
+            background-color: green;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .secondary-deal-image {
+            background-color: #ff6347;
+            width: 100%;
+            height: 150px;
+        }
+        .secondary-deal .text-muted {
+            font-weight: bold;
+            color: gray;
+        }
+        .secondary-deal .fw-bold {
+            font-weight: bold;
+            color: black;
+        }
+        .secondary-deal .deal-countdown {
+            color: gray;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            text-align: center;
+            color: gray;
+        }
+        a {
+            color: green;
+            text-decoration: none;
+        }
+        a:hover {
+            color: darkgreen;
+            text-decoration: underline;
+        }
+        .social-icons .btn {
+            margin-right: 0.5rem;
+        }
+        .twitter-buzz p {
+            margin-bottom: 1rem;
+        }
+        .twitter-buzz .btn {
+            float: right;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar-nav .separator {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="text-center px-4">
+    <a class="brand-logo" href="#">Dealers</a>
+</header>
+
+<!-- Navigation Menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <span class="separator">⋮</span>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <span class="separator">⋮</span>
+            <li class="nav-item">
+                <a class="nav-link" href="#">All Deals</a>
+            </li>
+            <span class="separator">⋮</span>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Submit Your Deal</a>
+            </li>
+            <span class="separator">⋮</span>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-envelope"></i></a>
+            </li>
+        </ul>
+
+        <!-- Email Subscription Section -->
+        <div class="col-lg-4 mx-auto">
+            <p class="mb-1">Sign up for free to get deals directly to your mailbox.</p>
+            <form class="d-flex">
+                <input class="form-control me-2" type="email" placeholder="Enter Your E-Mail Address" aria-label="Email">
+                <button class="btn btn-subscribe" type="submit">Subscribe Me</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container my-5">
+    <div class="row">
+        <!-- Primary Deal Section -->
+        <div class="col-lg-7">
+            <h2 class="deal-title">This is one very amazing deal</h2>
+            <div class="placeholder-image mb-3"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <!-- Deal Countdown and Price -->
+        <div class="col-lg-5 text-center">
+            <p class="deal-end-text">This deal will end in:</p>
+            <p class="deal-countdown-timer">6 days 1 hrs 52 min 51 sec</p>
+            <p class="discount-text">Discount</p>
+            <p class="discount-percentage">43%</p>
+            <div class="row price-details justify-content-center">
+                <div class="col-auto">
+                    <p class="text-muted fw-bold">Deal Value</p>
+                    <p class="fw-bold">$47</p>
+                </div>
+                <div class="col-auto">
+                    <p class="text-muted fw-bold">You Save</p>
+                    <p class="fw-bold">$20</p>
+                </div>
+            </div>
+            <!-- Social Icons -->
+            <div class="social-icons mb-3">
+                <button class="btn btn-outline-primary">
+                    <i class="bi bi-twitter"></i> Tweet <span class="badge bg-secondary">9</span>
+                </button>
+                <button class="btn btn-outline-primary">
+                    <i class="bi bi-facebook"></i> Like <span class="badge bg-secondary">5</span>
+                </button>
+            </div>
+            <button class="btn btn-buy btn-lg">Buy this deal - $27</button>
+        </div>
+    </div>
+
+    <!-- Secondary Deals Section -->
+    <hr class="my-5">
+    <div class="row text-center">
+        <!-- Deal 1 -->
+        <div class="col-md-4 mb-4 secondary-deal">
+            <h4>Lorem Ipsum Dolor Deal</h4>
+            <div class="secondary-deal-image mb-2"></div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-muted">Deal Value</p>
+                    <p class="fw-bold">$47</p>
+                </div>
+                <div class="col">
+                    <p class="text-muted">Discount</p>
+                    <p class="fw-bold">43%</p>
+                </div>
+                <div class="col">
+                    <p class="text-muted">You Save</p>
+                    <p class="fw-bold">$20</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="deal-countdown mb-0">71 days 23 hrs 38 min 36 sec</p>
+                <button class="btn btn-subscribe btn-sm">SEE DEAL</button>
+            </div>
+        </div>
+        <!-- Deal 2 -->
+        <div class="col-md-4 mb-4 secondary-deal">
+            <h4>Lorem Ipsum Dolor Deal</h4>
+            <div class="secondary-deal-image mb-2"></div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-muted">Deal Value</p>
+                    <p class="fw-bold">$47</p>
+                </div>
+                <div class="col">
+                    <p class="text-muted">Discount</p>
+                    <p class="fw-bold">43%</p>
+                </div>
+                <div class="col">
+                    <p class="text-muted">You Save</p>
+                    <p class="fw-bold">$20</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="deal-countdown mb-0">71 days 23 hrs 38 min 36 sec</p>
+                <button class="btn btn-subscribe btn-sm">SEE DEAL</button>
+            </div>
+        </div>
+        <!-- Deal 3 -->
+        <div class="col-md-4 mb-4 secondary-deal">
+            <h4>Lorem Ipsum Dolor Deal</h4>
+            <div class="secondary-deal-image mb-2"></div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-muted">Deal Value</p>
+                    <p class="fw-bold">$47</p>
+                </div>
+                <div class="col">
+                    <p class="text-muted">Discount</p>
+                    <p class="fw-bold">43%</p>
+                </div>
+                <div class="col">
+                    <p class="text-muted">You Save</p>
+                    <p class="fw-bold">$20</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <p class="deal-countdown mb-0">71 days 23 hrs 38 min 36 sec</p>
+                <button class="btn btn-subscribe btn-sm">SEE DEAL</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Information Sections -->
+    <div class="row my-5">
+        <!-- About Our Deals -->
+        <div class="col-md-4">
+            <h5>About Our Deals</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </div>
+        <!-- Twitter Buzz -->
+        <div class="col-md-4 twitter-buzz">
+            <h5>Twitter Buzz</h5>
+            <div class="buzz-item">
+                <p>
+                    7 Photoshop tips for designing clean and modern websites <a href="#">su.pr/ru0pp</a>
+                </p>
+                <button class="btn btn-outline-secondary btn-sm">1 Day Ago</button>
+            </div>
+            <hr>
+            <div class="buzz-item">
+                <p>
+                    7 Photoshop tips for designing clean and modern websites <a href="#">su.pr/ru0pp</a>
+                </p>
+                <button class="btn btn-outline-secondary btn-sm">1 Day Ago</button>
+            </div>
+        </div>
+                <!-- Other Pages -->
+        <div class="col-md-4">
+            <h5>Other Pages</h5>
+            <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Our Deals</a></li>
+                <li><a href="#">All Deals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>Copyright Information Goes Here 2012. All Rights Reserved.</p>
+    <p>Designed by Themes Kingdom</p>
+</footer>
+</body>
+</html>
